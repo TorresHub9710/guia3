@@ -59,49 +59,42 @@
             </div>
         </div>
     <!-----------------MAIN---------------------------->
-        <div id="container">
-            <h3>Ingresa aquí los datos</h3>
-            <form>
-                <p>Titulo de tu Receta:</p>
-                <input type="text" class="input-text" name="recetaName" id="recetaName" placeholder="Digite el Nombre de la Receta">
-            </form>
-                <br>
-                <br>
-            <form>
-                <p>Tiempo de preparación:</p>
-                <input type="time" class="input-text" name="cookTime" id="cookTime">
-            </form>
-                <br>
-                <br>
-            <form>
-                <p>Lista de ingredientes:</p>
-                <input type="text" class="input-text" name="ingredients" id="ingredients" placeholder="Liste aqui sus ingredientes">
-            </form>
-                <br>
-                <br>
-            <form>
-                <p>Descripción e instrucciones:</p>
-                <input type="text" class="input-text" name="" id="descripcion_E_Instruciones" placeholder="Descripcion e Instrucciones">
-            </form>
-            <br>
-            <form>
-                <p>Sube un video de preparación (Opcional):</p>
-                <input type="text" class="input-text" name="video" id="video" placeholder="Link del video">
-                <button class="button"><span>Cargar vídeo</span></button>
-
-            </form>
-                <br>
-            <form>
-                <p>Coloca una imagen de portada (Opcional):</p>
-                <input type="text" class="input-text" name="image" id="image" placeholder="Link de la imagen">
-                <button class="button">Cargar imagen</button>    
-
-            </form>
-            <br>
-            <br>
-            <button class="button" id="botonGuardar" onclick="captura()"><span>Comparte</span></button>    
+<div class="formulario">
+        <form action="usurecetas.php" class="form-recetas" method="post"  enctype="multipart/form-data" onsubmit="return validar();">
+        <h2 class="form-titulo">Ingresa aquí los datos</h2>
+        <div class ="container--flex">
+            <label for ="" class ="form--label">Titulo de tu Receta:</label>
+            <input type="text" class="form-input" name="receta" id="receta">
         </div>
+
+        <div class ="container--flex">
+            <label for ="" class ="form--label">Tiempo de preparación:</label>
+            <input type="text" class="form-input" name="tiempo" id="tiempo">
+        </div>
+
+        <div class ="container--flex">
+            <label for ="" class ="form--label">Lista de ingredientes:</label>
+            <input type="text" class="form-input" name="ingredientes" id="ingredientes">
+        </div>
+
+        <div class ="container--flex">
+            <label for ="" class ="form--label">Descripción e instrucciones:</label>
+            <input type="text" class="form-input" name="instrucciones" id="instrucciones">
+        </div>
+
+
+
+        <div class ="container--flex">
+            <label for ="" class ="form--label">Coloca una imagen de portada:</label>
+            <input type="file" class="form-file" name="imagen" >
+        </div>
+        <input type="submit" class="form-submit">
+
+
+        
+    </form>
     </div>
+    <script src="http://localhost/Formulario/JS/formulario.js"></script>
 
 <!----------------------Footer------------------------>
     <div class="contenedor-footer">

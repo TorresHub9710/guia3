@@ -9,36 +9,41 @@ function mostrar_menu() {
 }
 
 
-// Variables - Formualrio //
-function captura(){
-    var nombreReceta, tiempoReceta, listaIngredientes, instrucciones, videos, imagen;
-    nombreReceta=document.getElementById("recetaName").value;
-    tiempoReceta=document.getElementById("cookTime").value;
-    listaIngredientes=document.getElementById("ingredients").value;
-    instrucciones=document.getElementById("descripcion_E_Instruciones").value;
-    videos=document.getElementById("video").value;
-    imagen=document.getElementById("image").value;
-    if (nombreReceta==""){
-        alert("Por favor ingrese un nombre para la receta");
-        document.getElementById("recetaName").focus();
-    }else{
-        if (listaIngredientes==""){
-            alert("Por favor ingrese los ingredientes para esta receta");
-            document.getElementById("ingredients").focus();
-        }else{
-            if (instrucciones==""){
-                alert("Por favor ingrese las instrucciones para esta receta");
-                document.getElementById("descripcion_E_Instruciones").focus();
-            }else{
-                document.getElementById("recetaName").value = "";
-                document.getElementById("ingredients").value = "";
-                document.getElementById("descripcion_E_Instruciones").value = "";
-                document.getElementById("cookTime").value = "";
-                document.getElementById("video").value = "";
-                document.getElementById("image").value = "";
-                document.getElementById("recetaName").focus();
-            }
-        }
+//* Formulario*//
+
+function validar() {
+    let recetaForm;
+    let tiempoForm;
+    let ingredientesForm;
+    let instruccionesForm;
+
+    recetaForm =document.getElementById("receta").value;
+    tiempoForm =document.getElementById("tiempo").value;
+    ingredientesForm =document.getElementById("ingredientes").value;
+    instruccionesForm =document.getElementById("instrucciones").value;
+
+    
+    
+    if(recetaForm ===""|| tiempoForm ===""|| ingredientesForm ===""|| instruccionesForm ===""){
+        alert ("Campos obligatorios");
+        return false;
     }
-    console.log(nombreReceta, listaIngredientes, instrucciones);
-}
+    else if(recetaForm.length < 2) {
+        alert ("El nombre de la receta es muy corto");
+        return false;
+    }
+
+    else if(tiemmpoForm.length > 10) {
+        alert ("Es mucho tiempo");
+        return false;
+    }
+    else if(ingredientesForm.length < 2) {
+        alert ("Muy pocos ingredientes");
+        return false;
+    }
+    else if(instruccionesForm.length < 10) {
+        alert ("Muy pocas instruccioness");
+        return false;
+    }
+    }
+    

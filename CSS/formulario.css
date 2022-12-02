@@ -122,6 +122,7 @@ header {
 }
 
 /*---------Portada----------*/
+
 .container-portada {
     width: 100%;
     height: 500px;
@@ -173,70 +174,69 @@ header {
 
 /*----------main------------*/
 
-#container{
+.formulario{
+    padding-top: 100px;
+    justify-content: center;
     display: flex;
-    flex-direction: column;
+}
+.form-recetas{
     justify-content: center;
     align-items: center;
-    width: 55%;
-    background-color: rgb(240, 224, 224);
-    margin: 120px auto 0px auto;
-    border-radius: 10px;
+    width: 95%;
+    max-width: 600px;
+    background: rgba(250, 134, 39, 0.9);
+    padding: 20px;
 }
 
-#container h3 {
-    text-align: center;
-    padding: 10px;
-    margin-left: -10px;
-    margin-bottom: 20px;
+
+
+.form-titulo{
     font-family: 'Poppins';
-    font-size: 35px;
-}
-
-#container p {
-    font-family: 'Dosis';
-    font-weight: 600;
-    font-size: 25px;
+    margin-top:0 ;
+    font-size: 1.7em;
+    padding-bottom: 30px;
+    color:#312d2d;
     text-align: center;
 }
 
-.input-text {
-    width: 100%;
-    padding-left: 5px;
-    border-radius: 5px;
-    border: none;
+.form--label,.form-input{
+display: block;
 }
 
-
-.button{
-    display: flex;
-    border-radius: 5px;
-    background-color:#ff831e;
+.form--label{
     font-family: 'Dosis';
-    font-weight: 600;
-    font-size: 20px;
-    padding: 5px;
-    margin: 10px auto;
-    border: none;
+    font-weight: 400;
+    width: 35%;
 }
 
-.button:hover{
-    color: #fff;
+.form-input{
+    width: 70%;
+    padding: 10px;
+    font-size: 1em;
+}
+.form-file{
+    font-size: 1em;
+    margin: 10px 0;
+    width: 100%;
+}
+.container--flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
 }
 
-#descripcion_E_Instruciones{
-    height: 100px;
-    border: 1px solid transparent;
-    text-align: left;
+.form-submit{
+width: 100%;
+background:rgb(255, 89, 0);
+padding: 10px;
+border:none;
+color:white;
+font-size: 1em;
+margin-top: 10px;
+cursor: pointer;
 }
 
-#botonGuardar{
-    display: inline-flex;
-    justify-content: center;
-    margin-left: auto ;
-    padding-left: 30px;
-    padding-right: 30px;
-}
 
 /*------------Footer--------------*/
 .contenedor-footer {
