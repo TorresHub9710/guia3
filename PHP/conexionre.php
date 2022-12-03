@@ -1,5 +1,5 @@
 <?php
-$conexion = mysqli_connect("localhost","root", "","recetas");
+$conexion = mysqli_connect("localhost","root", "","futuristic_cousine");
 /*
 if($conexion){
     echo "conectado";
