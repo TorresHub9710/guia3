@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&family=Poppins:wght@300;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*----------Header------------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 15px 20px -22px black;
+    z-index: 10;
+}
+
+.contenido-header {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dosis';
+}
+
+.logo a {
+    color: #000;
+    text-decoration: none;
+}
+
+.logo a::after {
+    color: #000;
+}
+
+.logo h1 b {
+    color: #ff7300da;
+}
+
+.menu {
+    height: 100px;
+}
+
+.menu nav {
+    height: 100%;
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li {
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Dosis';
+    font-weight: 700;
+}
+
+.menu-selected:before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #ff7300da;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #777777;
+    transition: color 300ms;
+}
+
+.menu ul li a:hover {
+    color: #ff7300da;
+}
+
+.menu .text-menu-selected {
+    color: #ff7300da;
+}
+
+.menu nav ul li a i {
+    display: none;
+}
+
+#icono-menu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background: #f5f3f3;
+    border-radius: 100%;
+    color:#312d2d;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#icono-menu:hover {
+    background: #ff7300;
+    opacity: 0.8;
+}
+
+/*---------Portada----------*/
+
+.container-portada {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 70px;
+    background-image: url(../img/img-portada.jpg);
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-portada:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255,115,0,0.9);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.container-text-portada {
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 8;
+}
+
+.container-text-portada h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.container-text-portada p {
+    font-size: 20px;
+    font-family: 'Dosis';
+    font-weight:600;
+    width: 80%;
+}
+
+/*----------main------------*/
+
+.formulario{
+    padding-top: 100px;
+    justify-content: center;
+    display: flex;
+}
+.form-recetas{
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    max-width: 600px;
+    background: rgba(250, 134, 39, 0.9);
+    padding: 20px;
+}
+
+
+
+.form-titulo{
+    font-family: 'Poppins';
+    margin-top:0 ;
+    font-size: 1.7em;
+    padding-bottom: 30px;
+    color:#312d2d;
+    text-align: center;
+}
+
+.form--label,.form-input{
+display: block;
+}
+
+.form--label{
+    font-family: 'Dosis';
+    font-weight: 400;
+    width: 35%;
+}
+
+.form-input{
+    width: 70%;
+    padding: 10px;
+    font-size: 1em;
+}
+.form-file{
+    font-size: 1em;
+    margin: 10px 0;
+    width: 100%;
+}
+.container--flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form-submit{
+width: 100%;
+background:rgb(255, 89, 0);
+padding: 10px;
+border:none;
+color:white;
+font-size: 1em;
+margin-top: 10px;
+cursor: pointer;
+}
+
+
+/*------------Footer--------------*/
+.contenedor-footer {
+    width: 100%;
+    padding: 40px 0px;
+    background: rgb(27, 27, 27);
+    margin-top: 40px;
+}
+
+.contenedor-footer footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contenedor-footer footer .logo-footer {
+    text-align: center;
+}
+
+.contenedor-footer footer .logo-footer img {
+    width: 100px;
+    border: solid 2px #fff;
+    border-radius: 100%;
+    
+}
+
+.contenedor-footer footer .redes-sociales{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.contenedor-footer footer .redes-sociales a {
+    text-decoration: none;
+}
+.contenedor-footer footer .redes-sociales .icono-footer {
+    font-size: 30px;
+    margin: 20px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    color: #ff7300da;
+}
+
+.contenedor-footer footer .redes-sociales .icono-footer:hover {
+    background: #ff7300da;
+}
+
+.contenedor-footer footer hr {
+    margin-top: 10px;
+    border: none;
+    height: 2px;
+    background: #fff;
+}
+
+.contenedor-footer h4{
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Dosis';
+    font-weight:700;
+}
+
+#titulo-contador {
+    font-family: 'Dosis';
+    color: #fff;
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
+
+.contador-visitas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(27, 27, 27);
+}
+
+.contador-visitas p {
+    font-family: 'Dosis';
+    font-weight: 800;
+    font-size: 30px;
+    color: #fff;
+}
+/*--------------DISEÑO RESPONSIVO----------------------*/
+@media screen and (max-width: 1220px) {
+
+    .contenido-header {
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    
+    .contenedor-principal {
+        transition: 300ms;
+    }
+    
+    .move-contenedor-principal {
+        transform: translateX(300px);
+    }
+
+    .menu {
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        background: #ff7300;
+        transform: translateX(-350px);
+        overflow: hidden;
+        opacity: 1;
+        box-shadow: 10px 0 20px -25px black;
+        transition: all 350ms;
+    }
+
+    .mostrar-menu-lateral {
+        width: 300px;
+        transform:  translateX(0px);
+    }
+
+    .menu nav ul {
+        flex-direction: column;
+    }
+
+    .menu-selected:before {
+        width: 0;
+    }
+
+    .menu nav ul li {
+        max-width: 200px;
+        height: 50px;
+        justify-content: flex-start;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .menu nav ul li a {
+        color: rgb(15, 15, 15);
+        transition: color 300ms;
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    .menu nav ul li a i {
+        width: 20px;
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    .menu nav ul li a:hover {
+        color: #fff;
+    }
+
+    .menu .text-menu-selected {
+        color: #fff;
+    }
+
+    #icono-menu {
+        display: flex;
+    }
+}
